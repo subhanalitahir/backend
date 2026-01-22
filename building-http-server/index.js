@@ -1,7 +1,10 @@
 const http = require("http");
 const fs = require("fs");
+const url = require("url");
 const myServer = http.createServer((req, res) => {
   const log = `${Date.now()}: New Request Added on the path ${req.url}\n`;
+  const parsedUrl = url.parse(req.url, true);
+  console.log(parsedUrl);
   fs.appendFile("./log.txt", log, () => {
     switch (req.url) {
       case "/":
