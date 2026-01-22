@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Subhan Ali Tahir",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "url": "^0.11.4"
+  }
 }
